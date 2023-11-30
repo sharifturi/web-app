@@ -1,0 +1,5495 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: FontAwesome;
+	src: url(../fonts/FontAwesome.otf) format('opentype');
+}
+@font-face {
+	font-family: WeatherIcons-Regular;
+	src:url(../fonts/weather_font/weathericons.otf) format('opentype');
+}
+@font-face {
+	font-family:weathericons-regular-webfont;
+	src:url(../fonts/weather_font/weathericons.ttf) format('truetype');
+}
+@font-face {
+	font-family:weathericons-regular-webfont;
+	src:url(../fonts/weather_font/weathericons-regular-webfont.eot) format('truetype');
+}
+@font-face {
+	font-family:weathericons-regular-webfont;
+	src:url(../fonts/weather_font/weathericons-regular-webfont.woff) format('truetype');
+}
+
+
+@font-face {
+	font-family: 'ProximaNova-Semibold';
+	src: url(../fonts/ProximaNova-Semibold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'ProximaNova-Regular';
+	src: url(../fonts/ProximaNova-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'ProximaNova-Light';
+	src: url(../fonts/ProximaNova-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'ProximaNova-Semibold';
+	src: url(../fonts/ProximaNova-Semibold.otf) format('opentype');
+}
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html, body {
+  background-color: #f2f6f9;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+a{ text-decoration:none; outline: 0;}
+a:hover, a:active, a:focus { outline: 0;}
+img {
+  max-width: 100%;
+  margin:auto;
+}
+.clear{clear:both;}
+/*.webapp_main_container {
+  margin: auto;
+  max-width: 1600px;
+  min-height: 100%;
+  position: relative;
+  height: auto;
+}*/
+#webapp-wrapper {
+  height: auto;
+  max-width: 100%;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+
+/* Header (Starts) */
+#header-wrapper{
+	height:30px;
+	width:100%;
+	font-family: 'ProximaNova-Semibold';
+	font-size:12px;
+	padding:8px 14px;
+	box-sizing:border-box;
+	background-color: #40434a;
+}
+.top-site-name{
+	color:#FFF;
+	padding:0;
+	float:left;
+}
+.top-site-name{
+	position:relative;	
+}
+.top-my-account > ul {
+  margin: 0;
+}
+.top-my-account{
+	float:right;
+	position:relative;
+}
+.top-my-account ul li{ color:#80969b; cursor:pointer;}
+.top-my-account ul li .fa-angle-down,
+.top-my-account ul li .fa-cog{
+	margin-left:14px;
+}
+/* Header (Ends) */
+
+
+/*main-container (Starts)*/
+#main-container{
+	width:100%;
+}
+
+/*sidebar (Starts)*/
+#sidebarbg_wrapper {
+  background-color: #40434a;
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 177px;
+  z-index: -1;
+}
+
+.sidebar {
+  background-color: #40434a;
+  border-bottom: 1px solid #83878c;
+  border-top: 1px solid #121417;
+  bottom: 0;
+  color: #fff;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  min-height: 100%;
+  position: absolute;
+  top: 30px;
+  width: 177px;
+}
+
+.sidebar ul li{
+	border-bottom:1px solid #121417;
+	border-top:1px solid #83878c;
+	font-size:13px;
+	height:58px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.sidebar ul li a{
+	color: #fff;
+    display: block;
+    font-size: 13px;
+    padding: 19px 5px 19px 58px;
+}
+
+.sidebar ul li:first-child{
+	/*padding:10px 7px;*/
+}
+.sidebar-counter {
+  box-sizing: border-box;
+  left: 0;
+  padding: 0 0 0 8px;
+  position: relative;
+  top: 18px;
+}
+.sidebar-counter .notifications{
+	color:#fff;
+	background-color:#3cac6c;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	position:absolute;
+	display:block;
+	width:20px;
+	height:20px;
+	text-align:center;
+	top: -6px;
+    z-index: 1;
+	box-sizing:border-box;
+	padding-top:3px;
+}
+.sidebar-counter .fa-bars{
+	color:#fff;
+	font-size: 1.3em;
+	padding-left: 12px;
+	
+}
+.sidebar ul li:nth-child(2){
+	padding-left:5px;
+	padding-top:5px;
+}
+.sidebar .edit-profile{
+	float: right;
+    width: 122px;
+	font-size:14px;
+	line-height:18px;
+}
+.sidebar .edit-profile a{
+	color:#FFF;
+	cursor:pointer;
+	font-size:12px;
+	padding:0 !important;
+	display:inline !important;
+}
+.sidebar .edit-profile a:hover{
+	background-color:inherit;
+}
+
+.sidebar ul li:nth-child(3){
+	padding-left:8px;
+	height:44px;
+}
+.nav.navbar-nav.navbar-right form {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 8px 5px 8px 0;
+  position: relative;
+  width: 100%;
+}
+.sidebar ul li input[type="text"]{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:100%;
+	cue-before:25px;
+	color:#80969b;
+	padding:7px 20px 7px 7px;
+	box-sizing:border-box;
+}
+.sidebar ul li input[type="submit"] {
+  background-image: url("../../images/search.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius:  0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  box-sizing: border-box;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top:9px;
+  text-align: center;
+  width: 14%;
+}
+.sidebar ul li:nth-child(4) a{
+	background-image:url(../../images/home.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(5) a{
+	background-image:url(../../images/itinerary.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(6) a{
+	background-image:url(../../images/profile.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(7) a{
+	background-image:url(../../images/chat.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(8) a{
+	background-image:url(../../images/budget.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(9) a{
+	background-image:url(../../images/currency.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+
+.sidebar ul li:nth-child(10) a{
+	background-image:url(../../images/wheather.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+.sidebar ul li:nth-child(11) a{
+	background-image:url(../../images/clock.png);
+	background-repeat:no-repeat;
+	background-position: 14px center;
+}
+
+.active a{background-color:#212326;}
+.sidebar ul li a:hover{ background-color:#212326;}
+.sidebar .edit-profile a:last-child{
+	margin-left:15px;
+}
+
+
+/*sidebar (Ends)*/
+.container{
+	width:1103px;
+	background-color:#f2f6f9;
+	margin-left:177px;
+	padding:20px;
+	box-sizing:border-box;
+}
+/*main-container (Ends)*/
+
+/* <-----------(page contant Start)-------------> */
+
+.page_contant {
+  float: left;
+  width: 100%;
+}
+.banner_check {
+  float: left;
+  margin:0 0 18px;
+  width: 100%;
+}
+.main_banner {
+  float: left;
+  margin: 0;
+  width: 70%;
+}
+.main_banner {
+  float: left;
+  margin: 0 3% 0 0;
+  width: 65%;
+}
+.banner_desc {
+  float: left;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.banner_img {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.banner_img img {
+  border-radius: 15px;
+  float: left;
+  margin: auto;
+  border-bottom: 2px solid #c6c5c7;
+  max-width: 100%;
+}
+.banner_desc_content {
+  bottom: 0;
+  height: 200px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 270px;
+}
+.banner_desc_content p{
+  color: #f2f6f9;
+  float: left;
+  font-size: 80px;
+  font-family: 'ProximaNova-Regular';
+  width: 100%;
+}
+.banner_desc_content span {
+  float: left;
+  font-size: 45px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.banner_desc_content_day {
+  bottom: 5px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.banner_desc_content_day p {
+  color: #f2f6f9;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 30px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+.chat_box {
+  float: left;
+  width: 32%;
+}
+.chat_box_main {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.chat_box_header {
+  background: #65cea7 none repeat scroll 0 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  float: left;
+  padding:10px 12px;
+  position: relative;
+  width: 100%;
+}
+.chat_box_header .fa.fa-cog.fa-2 {
+  color: #94ddc2;
+  float: right;
+  font-size: 30px;
+  position: relative;
+  right: -6px;
+  text-align: right;
+  top: -6px;
+  width: auto;
+}
+.sidebar-counter > a {
+  padding: 0 !important;
+  width: 20%;
+}
+.chat_box_header_counter {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  float: left;
+  height: 62px;
+  margin: 0 2% 0 0;
+  position: relative;
+  text-align: center;
+  width: 62px;
+}
+.chat_box_header_counter p {
+  bottom: 0;
+  color: #f2f6f9;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 30px;
+  height: 28px;
+  left: 0;
+  margin: auto;
+  padding:0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.chat_box_header_desc {
+  float: left;
+  color: #fff;
+  margin: -8px 0 0;
+  text-align: center;
+  width: 75%;
+}
+.chat_box_header_desc h1 {
+  font-family: proximanova-regular;
+  font-size: 20px;
+  margin: 0 0 3px;
+}
+.chat_box_header_desc p {
+  font-family: proximanova-regular;
+  font-size: 14px;
+}
+.sender_reciever_chat {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px 15px 0 0;
+  box-sizing: border-box;
+  float: left;
+  margin: 2% 0 0;
+  padding:6px 0 0;
+  position: relative;
+  width: 100%;
+}
+.reciever_msg_img {
+  box-sizing: border-box;
+  float: left;
+  margin:0 0 2%;
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+
+.reciever_msg_time {
+  border-radius: 10px;
+  box-sizing: border-box;
+  float: left;
+  padding: 8px;
+  width: 70%;
+}
+.reciever_img {
+  float: right;
+  text-align: center;
+  width: 30%;
+}
+.reciever_msg_img .reciever_msg_time {
+	position: relative;
+	background: #fff;
+	border: 2px solid #80969b;
+}
+.reciever_msg_img .reciever_msg_time:after, .reciever_msg_time:before {
+	left: 100%;
+	top: 40%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.reciever_msg_img .reciever_msg_time:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #fff;
+	border-width: 14px;
+	margin-top: -14px;
+}
+.reciever_msg_img .reciever_msg_time:before {
+	border-color: rgba(128, 150, 155, 0);
+	border-left-color: #80969b;
+	border-width: 17px;
+	margin-top: -17px;
+}
+.sender_msg_img {
+  box-sizing: border-box;
+  float: left;
+  margin:0 0 3%;
+  padding: 0 20px 0 0;
+  width: 100%;
+}
+.sender_img {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+.sender_msg_time {
+  border-radius: 10px;
+  box-sizing: border-box;
+  float: right;
+  padding: 8px;
+  width: 70%;
+}
+.sender_msg_time {
+	position: relative;
+	background: #ffff;
+	border: 2px solid #80969b;
+}
+.sender_msg_time:after, .sender_msg_time:before {
+	right: 100%;
+	top: 40%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.sender_msg_time:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 14px;
+	margin-top: -14px;
+}
+.sender_msg_time:before {
+	border-color: rgba(128, 150, 155, 0);
+	border-right-color: #80969b;
+	border-width: 17px;
+	margin-top: -17px;
+}
+.sender_reciever_chat p {
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 14.05px;
+  margin: auto;
+  padding:0;
+  width: 100%;
+}
+.reciever_msg_time > p {
+  color: #80969b;
+}
+.sender_msg_time > p {
+  color: #3d4045;
+}
+.sender_reciever_chat .time {
+  float: left;
+  margin: 6px 0 0;
+  width: 100%;
+}
+.sender_reciever_chat .fa.fa-clock-o {
+  background: #80969b none repeat scroll 0 0;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-size: 24px;
+  height: auto;
+  margin: 0 2% 0 0;
+  padding: 0 2px;
+  text-align: center;
+  width: auto;
+}
+.sender_reciever_chat label {
+  color: #80969b;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 14.05px;
+  margin: auto;
+  padding:5px 0 0;
+}
+.chat_form {
+  background: #0f1013 none repeat scroll 0 0;
+  border-radius: 0 0 15px 15px;
+  box-sizing: border-box;
+  margin:0;
+  padding: 2px 0 0;
+  border-bottom: 2px solid #c6c5c7;
+  position: relative;
+  width: 100%;
+}
+.chat_form > form {
+	background: #3d4045 none repeat scroll 0 0;
+	border-top: 1px solid #7d8085;
+	box-sizing: border-box;
+	border-radius: 0 0 15px 15px;
+	float: left;
+	margin: 0;
+	padding: 8px;
+	width: 100%;
+}
+.chater_name_icon {
+  float: left;
+  margin: 0 2% 0 0;
+  position: relative;
+  width: 72%;
+}
+.chat_form .chater_name {
+  background: #515358 none repeat scroll 0 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #a8a9ac;
+  float: left;
+  font-family: proximanova-regular;
+  font-size: 16px;
+  padding: 8px 5px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.chat_form a .fa.fa-times {
+  background: #a8a9ac none repeat scroll 0 0;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: #515358;
+  float: left;
+  font-size: 12px;
+  padding: 2px 5px 4px;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+.chat_form input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 20px;
+  padding: 5px 8px;
+  text-align: center;
+  width: 25%;
+}
+.clocks_weather {
+  float: left;
+  width: 100%;
+}
+.clocks_section {
+  float: left;
+  margin: 0 3% 0 0;
+  width: 65%;
+}
+.clocks_section > ul {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.clocks_section li {
+  border-bottom: 2px solid #c6c5c7;
+  border-radius: 14px;
+  box-sizing: border-box;
+  float: left;
+  font-family: "proximanova-regular";
+  list-style: outside none none;
+  margin: 0 2% 0 0;
+  padding: 0;
+  position: relative;
+  width: 32%;
+}
+.itinerary {
+  float: left;
+  margin: 0 3% 0 0 !important;
+  width: 32% !important;
+}
+.clocks_section .itinerary li {
+  width: 100%;
+}
+.clocks_section li h1 {
+  margin: 0;
+}
+.clocks_section .clocks_section_awsomefonts {
+  box-sizing: border-box;
+  float: right;
+  padding: 3px 6px;
+  text-align: right;
+  width: 100%;
+}
+.clocks_section ul li .fa.fa-cog.fa-2 {
+  float: right;
+  font-size: 26px;
+  position: relative;
+}
+.clocks_section #clocks_secsion_1{
+	background:#43474d;
+}
+.clocks_section #clocks_secsion_1 .clocks_secsion_1 {
+  color:#7c7f83;
+}
+.clocks_section #clocks_secsion_2{
+	background:#65cea7;
+}
+.clocks_section #clocks_secsion_2 .clocks_secsion_2{
+	color:#94ddc2;
+
+}
+.clocks_section #clocks_secsion_3{
+	background:#6bafbd;
+}
+.clocks_section #clocks_secsion_3 .clocks_secsion_3{
+	color:#98c7d1;
+}
+
+.clocks_section li:last-child {
+  margin-right: 0;
+}
+.clocks_section .clocks_section_desc {
+  float: left;
+  margin: auto;
+  padding:66px 0;
+  text-align: center;
+  width: 100%;
+}
+.analog li {
+  border: medium none;
+}
+.clocks_section_desc > p {
+  color: #fff;
+  font-size: 24px;
+  margin: auto;
+  float:left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.clocks_section_desc span {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	font-size: 40px;
+	width: 10%;
+}
+.clocks_section_heading {
+  background: #3d4045 none repeat scroll 0 0;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  float: left;
+  padding:4px 0 0;
+  width: 100%;
+}
+.clocks_section_heading_border_top {
+  background: #0f1013 none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.clocks_section_heading_border_bottom {
+  background: #7d8085 none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.clocks_section_heading a h1 {
+  color: #f2f6f9;
+  display: block;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 16px;
+  padding: 15px 0 18px;
+  text-align: center;
+  width: 100%;
+}
+.speed_count_img_info {
+  float: left;
+  width: 100%;
+}
+.speed_count_img_info.clock_count_img_info {
+  padding: 6px 0 8px;
+}
+.speed_count_img {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.speed_count_info {
+  bottom: 20px;
+  left: 20px;
+  margin: auto;
+  position: relative;
+  width: 80%;
+}
+.speed_count_info p {
+  color: #fff;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 12px;
+  text-align: center;
+  width: 40%;
+}
+#preview {
+  border-radius: 10px;
+  clear: both;
+  color: #fff;
+  float: left;
+  margin:0 0 14px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.opts {
+  position: absolute;
+}
+#canvas-preview {
+  position: relative;
+  width: 220px;
+}
+#preview-textfield {
+  color: #fff;
+  font-family: "proximanova-regular";
+  font-size: 12px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 94px;
+}
+.speed_count_start {
+  right: 5px;
+}
+.speed_count_end {
+  left: 5px;
+}
+.speed_count_dec {
+  float: left;
+  margin: 0 0 25px;
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+}
+.speed_count_dec > p {
+  color: #fff;
+  float: left;
+  font-size: 30px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+.speed_count_dec span {
+  float: left;
+  font-size: 14px;
+  width: 100%;
+}
+.clocks_section_heading_budget_border_top {
+  background: #239261 none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.clocks_section_heading_budget_border_bottom {
+  background: #9cdec8 none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.clocks_section_heading_budget {
+  background: #5fc19d none repeat scroll 0 0;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  float: left;
+  padding:4px 0 0;
+  width: 100%;
+}
+.clocks_section_heading_budget a h1 {
+  color: #f2f6f9;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 16px;
+  padding: 15px 0 18px;
+  text-align: center;
+  text-transform:uppercase;
+  width: 100%;
+}
+.watch_count_dec {
+  float: left;
+  margin: 4% 0 0;
+  width: 100%;
+}
+.many_watch_count_dec {
+  float: left;
+  margin: 0;
+  width: 35%;
+}
+.many_watch_count_dec > p {
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+}
+.many_watch_count_dec p span {
+  float: left;
+  width: 100%;
+  margin: 0;
+  font-size:14px;
+}
+.many_watch_count_img {
+  float: left;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+.digital-clock-top {
+  float: left;
+  width: 60%;
+}
+.many_watch_count_dec_right {
+  float: left;
+  width: 65%;
+}
+.watch_count_dec > p {
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+}
+.watch_count_dec span {
+  float: left;
+  width: 100%;
+  font-size: 13.5px;
+}
+.watch_clocks_section_heading_budget {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.watch_clocks_section_heading_budget {
+  background: #65a4b1 none repeat scroll 0 0;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  float: left;
+  padding: 4px 0 0;
+  width: 100%;
+}
+.watch_clocks_section_heading_budget1{
+	border-radius: 0 0 14px 14px;
+	box-sizing: border-box;
+	float: left;
+	padding: 4px 0 0;
+	width: 100%;
+ }
+.watch_clocks_section_heading_border_top {
+  background: #28697b none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.watch_clocks_section_heading_border_bottom {
+  background: #a0ccd4 none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.watch_clocks_section_heading_budget a h1 {
+  color: #f2f6f9;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 16px;
+  padding: 15px 0 18px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.weather_section {
+  background-color: #6bafbd;
+  border-radius: 14px;
+  float: left;
+  border-bottom: 2px solid #c6c5c7;
+  width: 32%;
+}
+.weather_section_inn {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.weather_section .clocks_section_awsomefonts {
+  box-sizing: border-box;
+  float: right;
+  padding: 3px 6px;
+  text-align: right;
+  color: #98c7d1;
+  width: 100%;
+}
+.weather_section .fa.fa-cog.fa-2.clocks_secsion_3 {
+  color: #98c7d1;
+  font-size: 24px;
+}
+.weather_section_temperature {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 8px;
+  width: 100%;
+}
+.weather_section_temperature > p {
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 90px;
+  padding:8px 8px 24px;
+  text-align: center;
+  width: 100%;
+}
+.weather_section_temperature span {
+  float: left;
+  font-size: 18px;
+  margin: 6px 0 0;
+  text-transform: capitalize;
+  width: 100%;
+}
+.weather_section_border {
+  clear: both;
+  margin: 0 auto;
+  width: 75%;
+}
+.weekly_report {
+  float: left;
+  margin: 2px 0;
+  padding:12px 0;
+  width: 100%;
+}
+.seven_days {
+  color: #fff;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  margin: 0 1% 0 0;
+  text-align: center;
+  width: 13%;
+}
+.seven_days i{
+  font-size: 16px;
+}
+.seven_days.sun {
+  margin: 0 0 0 0;
+}
+.seven_days p {
+  border-bottom: 2px solid #fff;
+  box-sizing: border-box;
+  margin: 0 auto 7px;
+  padding: 4px;
+  text-align: center;
+  width: 80%;
+}
+.city_guide {
+  float: left;
+  margin: 18px 0 20px;
+  width: 100%;
+}
+.city_guide_inn {
+  float: left;
+  position:relative;
+  margin: 0 2% 0 0;
+  border-radius:14px;
+  width: 49%;
+}
+.city_guide_img {
+  border-radius: 15px;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.city_guide_img img {
+  border-radius: 15px;
+  float: left;
+  width: 100%;
+}
+.city_guide_right {
+  margin: 0 !important;
+}
+.city_guide_desc {
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size:16px;
+  font-family: 'ProximaNova-Regular';
+  padding: 8px;
+  position: absolute;
+  width: 100%;
+}
+.city_guide_desc a:hover{
+  color: #fff;
+}
+a:hover{
+  text-decoration:none;
+}
+
+.city_guide_desc_left {
+  float: left;
+  width: auto;
+  text-decoration:none;
+  color: #fff;
+}
+.city_guide_desc_right {
+  float: right;
+  color: #fff;
+  text-decoration:none;
+  width: auto;
+}
+/* <----------- page contant End -------------> */
+
+/* <----------- Inner pages contant start -------------> */
+.amsterdam {
+  background: #43474d none repeat scroll 0 0;
+  border-radius: 14px 14px 0 0;
+  float: left;
+  margin: 0;
+  width: 65%;
+}
+.amsterdam_section_awsomefonts {
+  box-sizing: border-box;
+  float: left;
+  padding: 5px;
+  width: 100%;
+}
+.amsterdam .amsterdam_section_awsomefonts a {
+  box-sizing: border-box;
+  display: block;
+  float: right;
+  padding: 3px 3px 0;
+  text-align: right;
+  width: 30%;
+}
+.amsterdam .amsterdam_section_awsomefonts p {
+  box-sizing: border-box;
+  float: left;
+  font-family: "proximanova-regular";
+  padding: 9px 0 9px 27px;
+  color:#ffffff;
+  font-size:20px;
+  width: 50%;
+}
+.amsterdam_section_awsomefonts span {
+  float: left;
+  margin: 0 5% 0 0;
+}
+.amsterdam_section_awsomefonts .amsterdam_secsion_1 {
+    color: #7c7f83;
+}
+.amsterdam_section_awsomefonts .fa.fa-cog.fa-2 {
+    float: right;
+    font-size: 26px;
+    position: relative;
+}
+.amsterdam_inn {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 0 19px;
+  width: 100%;
+}
+.amsterdam_top {
+  float: left;
+  margin:0 0 5%;
+  width: 100%;
+}
+.amsterdam_top_left {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  float: left;
+  height: 51px;
+  margin: 0 2% 0 0;
+  position: relative;
+  text-align: center;
+  width: 51px;
+}
+.amsterdam_top_left p {
+  bottom: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 20px;
+  height: 20px;
+  left: 0;
+  line-height: 20px;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.amsterdam_top_right {
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  margin: 0;
+  width: 85%;
+}
+.amsterdam_top_right > h1 {
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 20px;
+  margin: 0;
+  width: 95%;
+}
+#amsterdam_right_top_1, #amsterdam_right_top_2{
+  color: #fff;
+  float: right;
+  text-align: center;
+  width: 5%;
+}
+.amsterdam_top_right_desc_main {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+#amsterdam_right_top_1 a{
+  color: #fff;
+  font-size: 20px;
+}
+#amsterdam_right_top_2 a{
+  color: #fff;
+  font-size: 20px;
+}
+.amsterdam_top_right h2 {
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 14px;
+  margin:6px 0;
+  width: 100%;
+}
+.amsterdam_top_right_desc_1{
+  float: left;
+  margin: 0 0 3%;
+  width: 100%;
+}
+.amsterdam_top_right_desc_1 > p {
+  float: left;
+  font-family: 'ProximaNova-Light';
+  font-size: 16px;
+  text-align: justify;
+  width: 100%;
+}
+.amsterdam_top_right_desc_1 ul {
+  float: left;
+  margin: 0 0 3% 0;
+  width: 100%;
+}
+.amsterdam_top_right_desc_1 ul h1{
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+}
+.amsterdam_top_right_desc_1 li {
+  background-image: url("../../images/dot_png.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: medium none;
+  box-sizing: border-box;
+  float: left;
+  font-family: proximanova-light;
+  font-size: 18px;
+  list-style: outside none none;
+  margin: 0 0 0 5%;
+  padding: 2px 0 2px 14px;
+  width: 95%;
+}
+.amsterdam_top_right_desc_2 {
+  float: left;
+  margin: 0 0 3%;
+  width: 100%;
+}
+.amsterdam_top_right_desc_2 > p {
+  float: left;
+  font-family: 'ProximaNova-Light';
+  font-size: 16px;
+  text-align: justify;
+  width: 100%;
+}
+.amsterdam_top_right_desc_2 ul {
+  float: left;
+  margin: 0 0 3% 0;
+  width: 100%;
+}
+.amsterdam_top_right_desc_2 ul h1{
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+}
+.amsterdam_top_right_desc_2 li {
+  background-image: url("../../images/dot_png.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: medium none;
+  box-sizing: border-box;
+  float: left;
+  font-family: proximanova-light;
+  font-size: 18px;
+  list-style: outside none none;
+  margin: 0 0 0 5%;
+  padding: 2px 0 2px 14px;
+  width: 95%;
+}
+.clendr_box_header {
+  background: #65a4b1 none repeat scroll 0 0;
+  border-radius: 15px;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.clendr_box_header > a {
+  box-sizing: border-box;
+  display: block;
+  float: right;
+  padding: 5px 6px 0;
+  text-align: right;
+  width: 100%;
+}
+.clendr_box_header a .fa.fa-cog.fa-2{
+  color:#94bfc9;
+  font-size:20px;
+}
+.clendr {
+  box-sizing: border-box;
+  float: left;
+  margin: 4% 0 0;
+  padding:0;
+  text-align: center;
+  width: 100%;
+}
+.schedule {
+  border-radius: 0 0 14px 14px;
+  color: #fff;
+  float: left;
+  font-family: proximanova-light;
+  font-size: 20px;
+  margin: 20px 0 0;
+  width: 100%;
+}
+.schedule a h1 {
+	color: #fff;
+	float: left;
+	padding: 18px 0;
+	text-align: center;
+	width: 100%;
+}
+.main_banner_profile_top {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+.main_banner_profile {
+	border-bottom: 2px solid #c2c5c7;
+	padding: 24px 22px;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 14px;
+	box-sizing: border-box;
+	float: left;
+	margin: 0 3% 0 0;
+	width: 70%;
+}
+.social_links_top {
+  float: left;
+  width: 27%;
+}
+.profile {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.profile .chat_box_header_counter {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  float: left;
+  height: 55px;
+  margin: 0 2% 0 0;
+  position: relative;
+  text-align: center;
+  width: 55px;
+}
+.chat_box_header_desc_profile {
+  color: #fff;
+  float: left;
+  margin: 15px 0 0 ;
+  text-align: center;
+  width: 65%;
+}
+.chat_box_header_desc_profile h1 {
+  font-family: 'proximanova-regular';
+  font-size: 12px;
+  margin: 0 0 3px;
+}
+.chat_box_header_desc_profile p {
+  font-family: 'proximanova-regular';
+  font-size: 12px;
+}
+.user_form_info {
+  float: left;
+  margin: 0 2% 0 0;
+  width: 30%;
+}
+.user_profile_img_desc {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.user_profile_img_name {
+  float: left;
+  margin: 0 0 62px;
+  width: 100%;
+}
+.user_profile_img_desc .chat_box_header {
+  border-radius: 3px;
+}
+.user_profile_img_name > img {
+  float: left;
+  margin: 0 5% 0 0;
+}
+.user_profile_img_name > p {
+  color: #212326;
+  float: left;
+  font-family: "ProximaNova-Semibold";
+  font-size: 18px;
+  padding: 20px 0 0;
+}
+.user_form {
+  float: left;
+  width: 68%;
+}
+.user_form > form {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+#user_form > ul {
+  float: left;
+  margin: 0 1% 0 0;
+  width: 49%;
+}
+#user_form li {
+  float: left;
+  list-style: outside none none;
+  margin: 0 0 3%;
+  width: 100%;
+}
+#user_form li label {
+  color: #65cea7;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 12px;
+  padding:8px 0;
+  width: 70px;
+}
+#user_form input {
+  box-sizing: border-box;
+  color: #767676;
+  float: left;
+  font-family: proximanova-regular;
+  font-size: 12px;
+  padding:8px 4px;
+  background:#f2f6f9;
+  width: 65%
+}
+#user_form li .fa.fa-pencil {
+  color: #cad4d8;
+  float: right;
+  font-size: 12px;
+  position: relative;
+  right: 17px;
+  top: 4px;
+}
+.social_links {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 14px;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.social_links > ul {
+  box-sizing: border-box;
+  float: left;
+  padding:18px 40px 20px;
+  width: 100%;
+}
+.social_links li {
+  border-radius: 6px;
+  float: left;
+  margin:0 0 17px;
+  padding:0 6px;
+  width: 100%;
+}
+.social_links li a {
+  color: #fff;
+  display: block;
+  float: left;
+  font-family: proximanova-regular;
+  font-size: 14px;
+  padding: 12px 0;
+  text-decoration: none;
+  width: 100%;
+}
+#facebook_link {
+  background: #1f5790 none repeat scroll 0 0;
+}
+#twitter_link {
+  background: #0098ba none repeat scroll 0 0;
+  
+}
+#google_plus_link {
+  background: #ed2e32 none repeat scroll 0 0;
+}
+.social_links li .fa {
+  margin: 0 3% 0 0;
+  color:#fff;
+  font-size:14px;
+}
+.login_to_link {
+  background: #3d4045;
+  border-radius: 0 0 14px 14px;
+  float: left;
+  padding: 10px 6px;
+  text-align: center;
+  width: 100%;
+}
+.login_to_link > a {
+  color: #fff;
+  font-family: proximanova-regular;
+  font-size: 18px;
+  text-decoration: none;
+}
+.chat_page_box {
+  float: left;
+  margin: 0 2% 0 0;
+  width: 70%;
+}
+.sender_reciever_chat_page {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px 15px 0 0;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 6px 0 0;
+  position: relative;
+  width: 100%;
+}
+.sender_reciever_chat_page .sender_msg_img {
+  box-sizing: border-box;
+  float: left;
+  margin: 0 0 3%;
+  padding: 0 20px 0 0;
+  width: 65%;
+}
+.sender_reciever_chat_page .sender_msg_img .sender_img {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+.sender_reciever_chat_page .sender_msg_time {
+  border-radius: 8px;
+  box-sizing: border-box;
+  float: right;
+  padding: 8px;
+  width: 78%;
+}
+.sender_reciever_chat_page p {
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 14.05px;
+  line-height: 23px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+.sender_reciever_chat_page .reciever_msg_time {
+  border-radius: 8px;
+  box-sizing: border-box;
+  float: left;
+  padding: 8px;
+  width: 80%;
+}
+.sender_reciever_chat_page .reciever_img {
+  float: right;
+  text-align: center;
+  width: 18%;
+}
+.chat_form .chat_page_btn {
+  width: 18%;
+}
+.sender_reciever_chat_page .chater_name_icon {
+  float: left;
+  margin: 0 2% 0 0;
+  position: relative;
+  width: 80%;
+}
+.sender_reciever_chat_page .time {
+  float: left;
+  width: 100%;
+}
+.sender_reciever_chat_page label {
+  color: #80969b;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 14.05px;
+  margin: auto;
+  padding: 5px 0 0;
+}
+.sender_reciever_chat_page .fa.fa-clock-o {
+  background: #80969b none repeat scroll 0 0;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-size: 24px;
+  height: auto;
+  margin: 0 2% 0 0;
+  padding: 0 2px;
+  text-align: center;
+  width: auto;
+}
+.client_tour {
+  float: left;
+  width: 28%;
+}
+.client_tour_inn {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 2px solid #c2c5c7;
+  border-radius: 14px;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 20px 8px;
+  width: 100%;
+}
+.client_tour_inn h1 {
+  color: #43474d;
+  font-family: proximanova-regular;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.client_tour_scroll {
+  box-sizing: border-box;
+  float: left;
+  height: 390px;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px;
+  width: 100%;
+}
+.client_tour_scroll > ul {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.client_tour_scroll li {
+  float: left;
+  list-style: outside none none;
+  margin: 0 0 3%;
+  padding: 6px 0;
+  width: 100%;
+}
+.img_user {
+  float: left;
+  margin: 0 1% 0 0;
+  width: 25%;
+}
+.chat_user_name_place {
+  float: left;
+  width: 74%;
+}
+.chat_user_name_place h1 {
+  margin: 10px 0 0;
+  text-align: left;
+  font-size: 16px;
+}
+.chat_user_name_place p {
+  color: #80969b;
+  font-family: proximanova-regular;
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+}
+.weather_page {
+  float: left;
+  width: 100%;
+}
+.weather_page .weather_section_top {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+/*.weather_section_top ul {
+  float: left;
+  margin: 0;
+  width: 100%;
+}*/
+.weather_section_top .weather_section_top_li {
+  background: #6bafbd none repeat scroll 0 0;
+  border-radius: 14px;
+  float: left;
+  margin: 0 2% 0 0;
+  width: 32%;
+}
+.weather_section_top li.weather_section_top_li:last-child {
+  margin-right:0;
+}
+.weather_section_top .weather_section_top_li .weather_section {
+  border-bottom: 2px solid #c6c5c7;
+  border-radius: 14px;
+  float: left;
+  width: 100%;
+}
+.weather_section_top .weather_section_top_li .chat_box {
+  float: left;
+  width: 100%;
+}
+.weather_section_top_li .clendr > img {
+  height: 190px;
+  width: 85%;
+}
+.weather_section_top .weather_section_top_li .clocks_section_heading_budget_border_top {
+  background: #235e6d none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.weather_section_top .weather_section_top_li .clocks_section_heading_budget_border_bottom {
+  background: #9cc7ce none repeat scroll 0 0;
+  float: left;
+  height: 1px;
+  width: 100%;
+}
+.weather_section_top_budget {
+  color: #fff;
+  float: left;
+  background:#5f9ba7;
+  font-family: proximanova-regular;
+  font-size: 16px;
+  border-radius:0 0 14px 14px;
+  text-align: center;
+  width: 100%;
+}
+.weather_section_top_budget a h1 {
+  font-size: 16px;
+  padding: 12px 0;
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 16px;
+  border-radius:0 0 14px 14px;
+  text-align: center;
+  width: 100%;
+}
+.clock_page_section_inn {
+  background: #6bafbd none repeat scroll 0 0;
+  border-radius: 14px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.clocks_section_awsomefonts {
+  float: right;
+  padding: 5px 10px 0;
+  text-align: right;
+  width: 100%;
+}
+.clock_page .clock_page_sections {
+  background-color: #6bafbd;
+  border-bottom: 2px solid #c6c5c7;
+  border-radius: 14px;
+  float: left;
+  width: 100%;
+}
+.clock_page .fa.fa-cog.fa-2.clocks_secsion_3 {
+  color: #98c7d1;
+  font-size: 24px;
+}
+.budget_section {
+  float: left;
+  margin: 0;
+  width: 80%;
+}
+.days_spent_top {
+  float: left;
+  margin:0 0 15px;
+  width: 100%;
+}
+.days_spent > li {
+  border: medium none;
+  float: left;
+  margin: 0;
+  list-style: outside none none;
+  width: 100%;
+}
+.days_spent {
+  margin: auto;
+  width: 65%;
+}
+.days_spent p {
+  color: #fff;
+  float: left;
+  font-family: proximanova-regular;
+  font-size: 24px;
+  padding:9px 0;
+  text-align: center;
+  width: 100%;
+}
+.days_spent span {
+  float: left;
+  width: 100%;
+}
+.big_night_out {
+  float: left;
+  margin:20px 0 0;
+  width: 100%;
+}
+.big_night_out .big_night_out_left {
+  background: #43474d none repeat scroll 0 0;
+  float:left;
+  width:32%;
+  border-bottom: 2px solid #c6c5c7;
+  border-radius: 14px;
+  box-sizing: border-box;
+  float: left;
+  font-family: "proximanova-regular";
+  list-style: outside none none;
+  margin: 0 2% 0 0;
+  padding: 0;
+  position: relative;
+  width: 32%;
+}
+
+
+.currency_section_inn .big_night_out_left:after{
+	left: 100%;
+	top: 18%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.currency_section_inn .big_night_out_left:before {
+	left: 100%;
+	top: 18%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.currency_section_inn  .big_night_out_left:before {
+	border-color: rgba(67, 71, 77, 0);
+	border-left-color: #43474d;
+	border-width: 14px;
+	margin-top: -14px;
+}
+.big_night_out_left:after {
+	border-color: rgba(67, 71, 77, 0);
+	border-left-color: #43474d;
+}
+
+.big_night_out .big_night_out_left .clocks_secsion_1 {
+	color: #7c7f83;
+	float: right;
+	font-size: 26px;
+	position: relative;
+}
+.big_night_out_ul {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  
+  width: 100%;
+}
+.big_night_out_ul li {
+  border: medium none;
+  box-sizing: border-box;
+  float: left;
+  left: 13px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 5px 15px 5px 0;
+  position: relative;
+  width: 100%;
+}
+.big_night_out_ul li:hover {
+  background-image:url(../../images/budget_png.png);
+  background-repeat:no-repeat;
+  background-position:right center;
+  cursor:pointer;
+}
+.big_night_out_left_li_border {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.big_night_desc_left {
+  float: left;
+  margin: 0;
+  width: 75%;
+}
+.big_night_desc_right {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+.big_night_desc_left > p {
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 12px;
+  margin: 0;
+  width: 100%;
+}
+.big_night_desc_left span {
+  color: #80969b;
+  float: left;
+  padding: 4px 0;
+  width: 100%;
+}
+.big_night_desc_right > h1 {
+  color: #fff;
+  float: left;
+  font-family:'proximanova-regular';
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  width: 100%;
+}
+.big_night_out_left_btns {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 15px;
+  width: 100%;
+}
+.big_night_out_left_btns input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  float: left;
+  font-family: proximanova-regular;
+  font-size: 10px;
+  margin: 0 2% 0 0;
+  padding: 9px 0;
+  text-align: center;
+  width: 48%;
+}
+.view_all_expence {
+  background: #32353a none repeat scroll 0 0;
+  color: #ffffff;
+  margin: 0 !important;
+}
+.big_night_out_right_top{
+  background: #9ab0af none repeat scroll 0 0;
+  border-bottom: 2px solid #c6c5c7;
+  border-radius: 14px;
+  color: #fff;
+  float: left;
+  font-family: 'proximanova-regular';
+  margin: 0;
+  padding: 20px 10px;
+  width: 66%;
+}
+.big_night_out_right  {
+	float:left;
+	width:100%;
+	margin: 0 0 2% 0;
+}
+.big_night_desc_right_top {
+  float: left;
+  margin: 0 0 35px;
+  width: 100%;
+}
+.big_night_desc_right_top p {
+  float: left;
+  font-size: 20px;
+  width: 100%;
+}
+.big_night_desc_right_top span {
+  float: left;
+  font-size: 18px;
+  padding: 5px 0 0;
+  width: 100%;
+}
+.big_night_desc_right_bot {
+  float: left;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.big_night_desc_right_bot p {
+  float: left;
+  font-size: 20px;
+  width: 100%;
+}
+.big_night_desc_right_bot .top_border {
+  background: #5d7978 none repeat scroll 0 0;
+  float: left;
+  height: 0.5px;
+  width: 100%;
+}
+.big_night_desc_right_bot .bot_border {
+  background: #c6d4d3 none repeat scroll 0 0;
+  float: left;
+  height:1px;
+  width: 100%;
+}
+.items_price {
+  float: left;
+  margin: 0;
+  width: 70%;
+}
+.items_price > p {
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  padding:7px 0 6px;
+  width: 100%;
+}
+.items_price span {
+  float: left;
+  width: 85%;
+}
+.total_price {
+  bottom: 0;
+  color: #1f1f1f;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+.total_price > p {
+  font-family: proximanova-light;
+  font-size: 16px;
+}
+.total_price > h1 {
+  float: left;
+  font-family: proximanova-light;
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.currency_section {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.currency_section_inn {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.currency_section_left {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding:25px 25px 0;
+  width: 100%;
+}
+.currency_section_left input {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #41444a;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 30px;
+  padding:6px 10px;
+  width: 100%;
+}
+.currency_section_heading {
+  background: #3d4045 none repeat scroll 0 0;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  float: left;
+  padding: 4px 0 0;
+  width: 100%;
+}
+.currency_section_left .clocks_section_heading {
+  background: #3d4045 none repeat scroll 0 0;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  float: left;
+  padding: 4px 0 0;
+  width: 100%;
+}
+.clocks_section_heading input {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #41444a;
+  float: left;
+  font-family: 'proximanova-regular';
+  font-size: 30px;
+  padding:6px 10px;
+  width: 100%;
+}
+.currency_section_left > h1 {
+  color: #80969b;
+  float: left;
+  font-size: 13.07px;
+  margin: 0;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+}
+.convert {
+  background-color: transparent !important;
+  background-image: url("../../images/convert_btn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fefefe !important;
+  font-family: "proximanova-regular";
+  font-size: 14px;
+  height: 43px;
+  margin: 20px 0 25px;
+  padding: 0 !important;
+  text-align: center;
+}
+.convert_loader_img {
+  float: left;
+  margin: 40px 0 45px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.select_web_dropdown {
+  float: left;
+  margin:35px 0 0;
+  width: 100%;
+}
+.select_bot {
+  margin:0 0 35px 0;
+}
+.select_web_dropdown .ddTitleText  {
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	appearance: none; /* Removes Default Firefox style*/
+	background-image:url(../../images/arow_2.png);
+	background-repeat: no-repeat;
+	background-position: 96% center;
+}
+.select_web_dropdown .ddTitleText  {
+  background-color: #3d4045;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border:none !important;
+  color: #fff;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 20px;
+  padding: 10px 5px;
+  width: 100%;
+}
+.dd .ddChild li .ddlabel {
+  color: #fff;
+  font-family: "proximanova-regular";
+  font-size: 14px;
+  margin: 0 0 0 6px;
+  float:none !important;
+}
+.select_web_dropdown .ddTitleText:hover {
+	cursor:pointer;
+}
+.dd .ddChild li.selected .ddlabel {
+  color: #000;
+}
+.select_web_dropdown > select {
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	appearance: none; /* Removes Default Firefox style*/
+	background-image:url(../../images/arow_2.png);
+	background-repeat: no-repeat;
+	background-position: 96% center;
+}
+.select_web_dropdown > select {
+  background-color: #3d4045;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 20px;
+  height: 40px;
+  padding: 10px 5px;
+  width: 100%;
+}
+.select_web_dropdown > select:hover {
+	cursor:pointer;
+}
+.select_web_dropdown select option {
+  color: #fff;
+  float: left;
+  font-family:'proximanova-regular';
+  font-size: 14px;
+  padding: 3px 0 3px 50px;
+  width: 100%;
+  margin: 6px 0;
+}
+.currency_section_bot_right {
+  background: #43474d none repeat scroll 0 0;
+  box-sizing: border-box;
+  padding:30px 30px 60px;
+}
+.currency_section_bot_right .top_border {
+  background: #121417 none repeat scroll 0 0;
+  height: 1px !important;
+  padding: 0 !important;
+}
+.currency_section_bot_right .bot_border {
+  background: #83878c none repeat scroll 0 0;
+  height: 1px !important;
+  padding: 0 !important;
+}
+.big_night_desc_right_top > h1 {
+  float: left;
+  font-size: 20px;
+  padding: 0 0 5px;
+  width: 100%;
+}
+.starting_currency_left {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 0 35px 0 0;
+  position: relative;
+  text-align: center;
+  top: 100px;
+  width: 35%;
+}
+.starting_currency_right {
+  background-image: url("../../images/border_bg.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 0 0 10px;
+  width: 65%;
+}
+.starting_currency_left p {
+  float: left;
+  font-family: proximanova-light;
+  font-size: 20px;
+  margin: 0 0 10px;
+  text-align: center;
+  width: 100%;
+}
+.starting_currency_left span {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.starting_currency_left_bot {
+  background: #3d4045 none repeat scroll 0 0;
+  border-radius: 6px;
+  float: left;
+  padding: 0 0 10px;
+  width: 100%;
+}
+/*.starting_currency_left_bot > select {
+  background-color: transparent;
+  float: left;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+}
+.starting_currency_left_bot > select {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none; 
+	background-image: url("../../images/select_bot_bg.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}*/
+#select3_msdd{
+  float: left;
+  text-align: center;
+  width: 100% !important;
+}
+#select3_msdd:hover{
+  cursor:pointer;
+}
+.starting_currency_left_bot .ddTitleText {
+  background-color: transparent;
+  float: left;
+  padding: 15px 0 125px;
+  text-align: center;
+  width: 100%;
+}
+.starting_currency_left_bot .ddTitleText {
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	appearance: none; /* Removes Default Firefox style*/
+	background-image: url("../../images/select_bot_bg.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.starting_currency_left_bot > select:hover {
+	cursor:pointer;
+}
+.starting_currency_left_bot select option{
+	padding:4px 2px;
+}
+.ui-widget-content {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: medium none !important;
+  color: #fff !important;
+}
+.ui-datepicker {
+  display: none;
+  padding: 0.2em 0.2em 0;
+  width: 100% !important;
+}
+.ui-widget-header {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: medium none !important;
+  color: #fff !important;
+  font-weight: normal !important;
+  font-size:14px !important;
+  font-family: 'proximanova-light'!important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: medium none !important;
+  color: #fff !important;
+  font-family: proximanova-light !important;
+  font-size: 16px !important;
+  font-weight: normal;
+  text-align: center;
+}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+  background-image: url("../../images/clnrd_arws.png") !important;
+  background-position: -9px 0;
+  background-repeat: no-repeat !important;
+}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
+  background-image: url("../../images/clnrd_arws.png") !important;
+  background-position:6px 0;
+  background-repeat: no-repeat !important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  background-color: #323548 !important;
+  background-image:none !important;
+  border:none !important;
+  border-radius: 25%;
+  color: #fff !important;
+  font-weight: normal;
+}
+.ui-datepicker th {
+  padding: 0.7em 0 !important;
+}
+.starting_currency_right > ul {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.starting_currency_right li {
+  border-bottom: medium none !important;
+  float: left;
+  margin: 0 0 35px;
+  width: 100%;
+}
+.starting_currency_right_img {
+  float: left;
+  margin:0 20px 0 0;
+  width: auto;
+}
+.starting_currency_right_ratio {
+  float: left;
+  margin: 25px 0 0;
+}
+.placename_temperature_ul {
+  margin: 0;
+}
+.placename_temperature_ul li {
+  color: #fff;
+  float: left;
+  padding: 4px 0 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+.placename_temperature_div_left {
+  float: left;
+  margin: 0;
+  width: 40%;
+}
+.placename_temperature_div_right {
+  bottom: 10px;
+  float: left;
+  margin: 0;
+  position: relative;
+  width: 60%;
+}
+.placename_temperature_div_left > p {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  font-family:'proximanova-regular';
+  margin: 0;
+  line-height:22px;
+  width: 90%;
+}
+.placename_temperature_div_left span {
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+}
+.placename_temperature_ul  .weather_section_border {
+  float: left;
+  width: 100%;
+}
+.tops_min_max {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+}
+.tops_min_max_desc p {
+  color: white;
+  float: left;
+  font-family: "proximanova-regular";
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.tops_min_max_desc p span{
+  color: white;
+  float: left;
+  /*font-family: 'proximanova-light';
+  font-size: 12px;*/
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  width: 100%%;
+}
+.tops_min_max .tops_min_max_img img {
+  filter: invert(100%);
+  float: left;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  width: auto;
+  z-index: 9999;
+}
+.tops_min_max {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.tops_min_max_img {
+  float: left;
+  margin: 0;
+  width: 40%;
+}
+.tops_min_max_desc {
+  float: left;
+  margin: 23px 0 0;
+  width: 60%;
+}
+.ddcommon {
+  width: 100% !important;
+}
+
+/* <----------- Inner page contant End -------------> */
+
+/* <----------- Media Query -------------> */
+
+
+
+
+@media (max-width: 239px) {
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_img img {
+	  height: 190px;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section li {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.city_guide_desc_left {
+	  float: left;
+	  text-align: center;
+	  width: 100%;
+	}
+	.city_guide_desc_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.tops img {
+		height: 80px;
+		width: 80px;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 100%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  padding: 6px;
+	  width: 100%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  float: left;
+	  padding: 0;
+	  margin: 0 0 2%;
+	  position: static;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  padding: 0;
+	  width: 100%;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+	
+	.gldp-default {
+	  left: 10px !important;
+	  top: 358px;
+	  width: 301px !important;
+	  z-index: 1000;
+	}
+	.example {
+	  float: left;
+	  width: 100%;
+	}
+	#canvas-preview {
+	  width: 100%;
+	}
+	.currency_section_left {
+	  padding: 25px 8px 0;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left: 24px !important;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding: 15px 0 70px;
+	}
+	.big_night_out_right_top {
+	  width: 100%;
+	}
+	.starting_currency_right_img {
+	  margin: 0;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right_ratio {
+	  margin: 10px 0 5px;
+	}
+	.big_night_desc_right_bot p {
+	  font-size: 16px;
+	}
+	.many_watch_count_dec {
+	  margin: 0;
+	  width: 100%;
+	}
+	.many_watch_count_dec_right {
+	  margin: 3% 0 0;
+	  width: 100%;
+	}
+	.analog1 {
+	  height: 150px;
+	}
+
+}
+@media (min-width:240px) and (max-width: 300px) {
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_img img {
+	  height: 190px;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section li {
+	  margin: 0 0 2%;
+	  text-align: center;
+	  width: 100%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.city_guide_desc_left {
+	  float: left;
+	  text-align: center;
+	  width: 100%;
+	}
+	.city_guide_desc_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.tops img {
+		height: 80px;
+		width: 80px;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 100%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  padding: 6px;
+	  width: 100%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right_top {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  float: left;
+	  padding: 0;
+	  margin: 0 0 2%;
+	  position: static;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  padding: 0;
+	  width: 100%;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding: 15px 0 80px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left: 10px !important;
+	}
+	.starting_currency_right_img {
+	  margin: 0;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right_ratio {
+	  margin: 10px 0 5px;
+	  width: 100%;
+	}
+	.big_night_desc_right_bot p {
+	  font-size: 16px;
+	}
+	.big_night_desc_right_top > h1 {
+	  text-align: center;
+	}
+	.many_watch_count_dec {
+	  margin: 0;
+	  width: 100%;
+	}
+	.many_watch_count_dec_right {
+	  margin: 3% 0 0;
+	  width: 100%;
+	}
+	.analog1 {
+	  height: 150px;
+	}
+
+}	
+@media (min-width:301px) and (max-width: 360px) {
+	
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_img img {
+	  height: 190px;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section li {
+	  margin: 0 0 2%;
+	  text-align: center;
+	  width: 100%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.city_guide_desc_left {
+	  float: left;
+	  text-align: center;
+	  width: 100%;
+	}
+	.city_guide_desc_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.tops img {
+		height: 80px;
+		width: 80px;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 100%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  padding: 6px;
+	  width: 100%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  float: left;
+	  padding: 0;
+	  margin: 0 0 2%;
+	  position: static;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  padding: 0;
+	  width: 100%;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding: 15px 0 90px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+	.big_night_out_right_top {
+	  width: 100%;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left: 40px;
+	}
+	.big_night_desc_right_top > h1 {
+	  text-align: center;
+	}
+	.starting_currency_right_img {
+	  margin: 0;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right_ratio {
+	  margin: 10px 0 5px;
+	  width: 100%;
+	}
+	.big_night_desc_right_bot p {
+	  font-size: 16px;
+	}
+	.big_night_desc_right_top > h1 {
+	  text-align: center;
+	}
+	.many_watch_count_dec {
+	  margin: 0;
+	  width: 100%;
+	}
+	.many_watch_count_dec_right {
+	  margin: 3% 0 0;
+	  width: 100%;
+	}
+	.analog1 {
+	  height: 150px;
+	}
+
+
+}
+@media (min-width:361px) and (max-width: 450px) {
+	
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_img img {
+	  height: 190px;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section li {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.city_guide_desc_left {
+	  float: left;
+	  text-align: center;
+	  width: 100%;
+	}
+	.city_guide_desc_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.tops img {
+		height: 80px;
+		width: 80px;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 100%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  padding: 6px;
+	  width: 100%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right_top {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  float: left;
+	  padding: 0;
+	  margin: 0 0 2%;
+	  position: static;
+	  text-align: center;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  padding: 0;
+	  width: 100%;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+
+}
+@media (min-width:451px) and (max-width: 500px) {
+	
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding: 64px 0;
+	}
+	.speed_count_dec {
+	  margin: 0 0 37px;
+	}
+	#preview-textfield {
+	  top: 85px;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100px;
+	}
+	#user_form input {
+	  width: 75%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  padding: 6px;
+	  width: 100%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right_top {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	  top: 14px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+	.speed_count_info p {	  width: 35%;
+	}
+	.starting_currency_right_img {
+	  margin: 0 1% 0 0;
+	  width: 30%;
+	}
+	.starting_currency_right_ratio {
+	  float: left;
+	  margin: 18px 0 0;
+	  width: 69%;
+	}
+	.big_night_desc_right_bot p {
+	  float: left;
+	  font-size: 18px;
+	  width: 100%;
+	}
+
+}
+@media (min-width:501px) and (max-width: 640px) {
+	/*.main_banner {
+	  float: left;
+	  margin: 0 0 3%;
+	  width: 100%;
+	}
+	.chat_box {
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 3%;
+	  width: 100%;
+	}
+	.weather_section {
+	  background-color: #65a4b1;
+	  border-bottom: 2px solid #c6c5c7;
+	  border-radius: 14px;
+	  float: left;
+	  width: 100%;
+	}
+	.banner_img img {
+	  height: 100%;
+	}*/
+	
+	
+	.container {
+	  margin-left: 0;
+	  padding: 10px;
+	  width: 100%;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding: 65px 0;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.city_guide_inn {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100px;
+	}
+	#user_form input {
+	  width: 78%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 10px;
+	  top: -20px;
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  float: none;
+	  margin: auto;
+	  padding: 6px;
+	  width: 50%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.big_night_out_left::after {
+	  display: none;
+	}
+	.big_night_out_left::before {
+	  display: none;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	.big_night_out_right_top {
+	  padding: 12px 10px;
+	  width: 100%;
+	}
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	  top: 14px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.clocks_section_heading input {
+	  font-size: 26px;
+	}
+	.starting_currency_right_img {
+	  margin: 0 1% 0 0;
+	  width: 30%;
+	}
+	.starting_currency_right_ratio {
+	  float: left;
+	  margin: 18px 0 0;
+	  width: 69%;
+	}
+	.big_night_desc_right_bot p {
+	  float: left;
+	  font-size: 18px;
+	  width: 100%;
+	}
+
+
+}
+/*@media (min-width:701px) and (max-width: 767px) {
+	
+}*/
+@media screen and (max-width: 767px) {
+	#canvas-preview {
+	  width: 100%;
+	}
+	#sidebarbg_wrapper {
+		display: none;
+	}
+	.sidebar {
+	  position: static;
+	  width: 100%;
+	}
+	.sidebar ul li {
+	  overflow: hidden;
+	}
+	.navbar-collapse.navigation{
+	  box-sizing: border-box;
+	  padding: 0 15px;
+	  width:100%;
+	  float:left;
+	}
+	.container {
+	  float: left;
+	  margin: 0;
+	  width: 100%;
+	}
+	.chat_box_header .fa.fa-cog.fa-2 {
+	  font-size: 24px;
+	}
+	.chat_box_header_counter {
+	  height: 50px;
+	  margin: 0 1% 0 0;
+	  width: 45px;
+	}
+	.chat_box_header_desc {
+	  margin:3px 0 0;
+	  width: 64%;
+	}
+	.reciever_msg_img {
+	  padding: 0 0 0 12px;
+	}
+	.chat_box_header_desc h1 {
+	  font-size: 14px;
+	}
+	.chat_box_header_desc p {
+	  font-size: 12px;
+	}
+	.weather_section_temperature > p {
+	  font-size: 77px;
+	  padding:16px 8px;
+	}
+	.sender_reciever_chat p {
+	  font-size: 12px;
+	}
+	.reciever_img {
+	  width: 22%;
+	}
+	.reciever_msg_time {
+	  padding: 4px;
+	}
+	.sender_img {
+	  width: 22%;
+	}
+	.sender_msg_time {
+	  padding: 4px;
+	}
+	.sender_msg_img {
+	  padding: 0 12px 0 0;
+	}
+	.sender_reciever_chat label {
+	  font-size: 10px;
+	  padding: 6px 0 0;
+	}
+	.sender_reciever_chat .fa.fa-clock-o {
+	  font-size: 18px;
+	  margin: 0 2% 0 0;
+	  padding: 0 2px 2px;
+	}
+	.reciever_msg_img .reciever_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.reciever_msg_img .reciever_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.sender_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.sender_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.tops {
+	  height: 160px;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 20px;
+	  width: 60%;
+	}
+	#user_form li .fa.fa-pencil {
+	  bottom: 13px !important;
+	  color: #cad4d8;
+	  font-size: 12px;
+	  position: relative;
+	  right: 6px;
+	}
+	.days_spent p {
+	  font-size: 20px;
+	  padding:9px 0;
+	}
+	.analog {
+	  background-image: url("../../images/clockface.png");
+	  background-repeat: no-repeat;
+	  background-size: 100% auto;
+	  float: none !important;
+	  margin: auto;
+	  width: auto;
+	}
+	.speed_count_dec > p {
+	  padding: 10px 0;
+	}	
+	#webapp-wrapper {
+	  overflow-x: hidden;
+	}
+	.weather_section_temperature span {
+	  font-size: 15px;
+	}
+}
+@media (min-width:641px) and (max-width: 768px) {
+	#webapp-wrapper {
+	  overflow: hidden;
+	}
+	.container {
+	  padding: 10px;
+	  width: 595px;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding: 65px 0;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops {
+	  clear: both;
+	  display: block;
+	  float: none;
+	  height: 130px;
+	  margin: auto !important;
+	  width: 65%;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100px;
+	}
+	#user_form input {
+	  width: 78%;
+	}
+	#user_form li .fa.fa-pencil {
+	  top: 5px;
+	  right:27px
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  float: none;
+	  margin: auto;
+	  padding: 6px;
+	  width: 50%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.days_spent p {
+	  padding: 7px 0;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.starting_currency_right li {
+	  border-bottom: medium none !important;
+	  float: left;
+	  margin: 0 0 10px;
+	  width: 100%;
+	}
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	/*.starting_currency_left {
+	  padding: 0 10px 0 0;
+	}*/
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	  top: 0;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  margin: 4% 0 0;
+	  padding: 0;
+	  width: 100%;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding:15px 0 70px;
+	}
+	.currency_section_left {
+	  margin: 0 0 14px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.speed_count_dec > p {
+	  padding: 11px 0;
+	}
+	.big_night_out_right_top {
+	  padding: 14px 10px;
+	  width: 55%;
+	}
+	.currency_section_bot_right {
+	  padding: 12px 15px 0 !important!important;
+	}
+	.starting_currency_left_bot > select {
+	  height: 170px;
+	}
+	.analog {
+	  float: none !important;
+	  list-style: outside none none;
+	  margin: auto !important;
+	  position: relative;
+	  width: 150px;
+	}
+	.starting_currency_right_img {
+	  float: left;
+	  margin: 0 3% 0 0;
+	  width: 30%;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left:0 !important;
+	  position: relative;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 5% 0 0;
+	  width: 40%;
+	}
+	.big_night_out_right {
+	  width: 55%;
+	}
+	.placename_temperature_div_left > p {
+	  font-size: 12px;
+	}
+	.many_watch_count_img {
+	  width: 50%;
+	}
+	.digital-clock-top {
+	  width: 50%;
+	}
+	
+
+}
+@media (min-width:769px) and (max-width: 850px) {
+	#webapp-wrapper {
+	  overflow: hidden;
+	}
+	.container {
+	  padding: 10px;
+	  width: 595px;
+	}
+	.main_banner {
+	  margin: 0;
+	  width: 100%;
+	}
+	.banner_desc_content {
+	  height: 80px;
+	  position: absolute;
+	  width: 100%;
+	}
+	.banner_desc_content p {
+	  font-size: 50px;
+	}
+	.banner_desc_content span {
+	  float: left;
+	  font-size: 36px;
+	  width: 100%;
+	}
+	.banner_desc_content_day p {
+	  box-sizing: border-box;
+	  font-size: 18px;
+	  padding: 10px 4px;
+	}
+	.banner_desc_content_day {
+	  bottom:5px;
+	}
+	.chat_box {
+	  margin: 3% 0;
+	  width: 100%;
+	}
+	.clocks_section {
+	  float: left;
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding: 65px 0;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.weather_section_temperature > p {
+	  font-size: 60px;
+	}
+	.city_guide {
+	  margin: 18px 0 0;
+	}
+	.city_guide_desc {
+	  font-size: 12px;
+	}
+	.tops {
+	  height: 130px;
+	}
+	.tops {
+	  clear: both;
+	  display: block;
+	  float: none;
+	  height: 130px;
+	  margin: auto !important;
+	  width: 65%;
+	}
+	.tops .texts {
+	  font-size: 52px;
+	  top: 18px;
+	  width: 60%;
+	}
+	.tops .text {
+		font-size: 25px;
+		top: 0;
+		width: 100%;
+	}
+	.itinerary {
+	  margin: 0 0 3% !important;
+	  width: 100% !important;
+	}
+	.amsterdam {
+	  width: 100%;
+	}
+	.amsterdam .amsterdam_section_awsomefonts p {
+	  font-size: 20px;
+	  padding: 4px 0 8px 18px;
+	  width: 100%;
+	}
+	.amsterdam_top_left {
+	  height: 40px;
+	  margin: 0 1% 0 0;
+	  width: 40px;
+	}
+	.amsterdam_top_left p {
+	  font-size: 20px;
+	  height: 16px;
+	  line-height: 16px;
+	}
+	.amsterdam_top_right {
+	  float: right;
+	  width: 75%;
+	}
+	.main_banner_profile {
+	  margin: 0 0 3% 0;
+	  padding:12px;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 10px;
+	}
+	.user_form {
+	  width: 100%;
+	}
+	#user_form > ul {
+	  margin: 0;
+	  width: 100%;
+	}
+	#user_form li label {
+	  padding:0 0 3px;
+	  width: 100px;
+	}
+	#user_form input {
+	  width: 78%;
+	}
+	#user_form li .fa.fa-pencil {
+	  top: 5px;
+	  right:27px
+	}
+	.social_links_top {
+	  width: 100%;
+	}
+	.social_links > ul {
+	  float: none;
+	  margin: auto;
+	  padding: 6px;
+	  width: 50%;
+	}
+	.chat_page_box {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.days_spent p {
+	  padding: 7px 0;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  margin: 0 0 3%;
+	  padding: 0;
+	  width: 100%;
+	}
+	.reciever_msg_img {
+	  padding: 0;
+	}
+	.client_tour {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 200px;
+	  padding: 0 10px;
+	  width: 100%;
+	}
+	.chat_form input {
+		padding: 9px 0;
+		font-size: 14px;
+	}
+	.big_night_desc_left {
+	  width: 65%;
+	}
+	.big_night_desc_right {
+	  width: 30%;
+	}
+	
+	.big_night_desc_right_top {
+	  margin: 0 0 12px;
+	}
+	.starting_currency_right li {
+	  border-bottom: medium none !important;
+	  float: left;
+	  margin: 0 0 10px;
+	  width: 100%;
+	}
+	/*
+	.currency_section_left {
+	  padding:10px 14px 0;
+	}
+	.convert_loader_img {
+	  margin:9px 0;
+	}
+	.select_web_dropdown {
+	  margin: 5px 0 5px;
+	}
+	.currency_section_left input {
+	  font-size: 24px;
+	  padding: 6px 10px;
+	}
+	.clocks_section_heading input {
+	  font-size: 24px;
+	}
+	.convert {
+	  height: 35px;
+	  margin: 0 0 4px;
+	}
+	*/
+	.items_price {
+	  width: 100%;
+	}
+	.total_price {
+	  border-top: 1px solid #eee;
+	  float: left;
+	  padding: 6px 0 0;
+	  position: static;
+	  text-align: left;
+	  width: 100%;
+	}
+	.total_price > p {
+	  font-size: 18px;
+	  width: 50%;
+	}
+	.total_price > h1 {
+	  float: left;
+	  text-align: right;
+	  width: 50%;
+	}
+	/*.starting_currency_left {
+	  padding: 0 10px 0 0;
+	}*/
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	  top: 0;
+	  width: 100%;
+	}
+	.starting_currency_right {
+	  background-image: none;
+	  margin: 4% 0 0;
+	  padding: 0;
+	  width: 100%;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding:15px 0 70px;
+	}
+	.currency_section_left {
+	  margin: 0 0 14px;
+	}
+	.weather_section_top .weather_section_top_li {
+	  margin: 0 0 2% 0;
+	  width: 100%;
+	}
+	.weather_section_top .chat_box {
+		  margin: 0;
+		  width: 100%;
+	}
+	.speed_count_dec > p {
+	  padding: 11px 0;
+	}
+	.big_night_out_right {
+	  padding: 14px 10px;
+	}
+	.currency_section_bot_right {
+	  padding: 12px 15px 0 !important!important;
+	}
+	.starting_currency_left_bot > select {
+	  height: 170px;
+	}
+	.analog {
+	  float: none !important;
+	  list-style: outside none none;
+	  margin: auto !important;
+	  position: relative;
+	  width: 150px;
+	}
+	.starting_currency_right_img {
+	  float: left;
+	  margin: 0 3% 0 0;
+	  width: 30%;
+	}
+	.starting_currency_right_ratio {
+	  float: left;
+	  margin: 15px 0 0;
+	  width: 66%;
+	}
+	.big_night_desc_right_bot p {
+	  font-size: 18px;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left:0 !important;
+	  position: relative;
+	}
+	.big_night_out .big_night_out_left {
+	  margin: 0 5% 0 0;
+	  width: 40%;
+	}
+	.big_night_out_right_top {
+	  width: 55%;
+	}
+	#canvas-preview {
+	  position: relative;
+	  width: 184px;
+	}
+	.currency_section_bot_right {
+	  padding: 30px 30px 32px;
+	}
+
+}
+@media (min-width:851px) and (max-width: 900px) {
+	#webapp-wrapper {
+	  overflow: hidden;
+	}
+	.container {
+	  width: 685px;
+	}
+	.placename_temperature_div_left > p {
+	  font-size: 12px;
+	}
+	.weather_section_temperature span {
+	  font-size: 15px;
+	}
+	.banner_img img {
+	  height: 285px;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 413px;
+	}
+	.chat_box_header_counter {
+	  height: 40px;
+	  width: 40px;
+	}
+	.chat_box_header .fa.fa-cog.fa-2 {
+	  right: -8px;
+	  top: -8px;
+	}
+	.clocks_section {
+	  margin: 0 0 3%;
+	  width: 100%;
+	}
+	.tops {
+	  clear: both;
+	  display: block;
+	  float: none;
+	  height: 150px;
+	  margin: auto;
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	  width: 50%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.sender_reciever_chat p {
+	  font-size: 12px;
+	}
+	.reciever_img {
+	  width: 25%;
+	}
+	.reciever_msg_time {;
+	  padding: 3px;
+	  width: 68%;
+	}
+	.reciever_msg_img .reciever_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.reciever_msg_img .reciever_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.sender_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.sender_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.chat_box_header_desc {
+	  float: left;
+	  width: 60%;
+	}
+	.sender_img {
+	  width: 25%;
+	}
+	.sender_msg_time {
+	  padding: 3px;
+	  width: 68%;
+	}
+	.chat_box_header_desc {
+	  margin: 8px 0 0;
+	}
+	.reciever_msg_img {
+	  margin: 0 0 1%;
+	  padding: 0 0 0 8px;
+	}
+	.sender_msg_img {
+	  margin: 0 0 2%;
+	  padding: 0 8px 0 0;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding:70px 0;
+	}
+	.chat_box_header_desc h1 {
+	  font-size: 11px;
+	}
+	.speed_count_dec > p {
+	  padding: 14px 0;
+	}
+	.watch_count_dec > p {
+	  line-height: 24px;
+	}
+	.weather_section_temperature > p {
+	  font-size: 70px;
+	  padding: 16px 8px;
+	}
+	.speed_count_img {
+	  box-sizing: border-box;
+	  padding: 0 15px;
+	}
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	  top: 18px;
+	}
+	.starting_currency_right_img {
+	  margin: 0 1% 0 0;
+	  width: 30%;
+	}
+	.starting_currency_right_ratio {
+	  margin: 8px 0 0;
+	  width: 68%;
+	}
+	.starting_currency_right li {
+	  margin: 0 0 22px;
+	}
+	.starting_currency_left_bot .ddTitleText {
+	  padding: 15px 0 80px;
+	}
+	.starting_currency_left_bot > select {
+	  /*height: 160px;*/
+	}
+	.select_web_dropdown {
+	  margin: 8px 0;
+	}
+	.convert_loader_img {
+	  margin: 12px 0;
+	}
+	.convert {
+	  height: 30px;
+	 /* margin: 0 0 8px;*/
+	}
+	.currency_section_left input {
+	  font-size: 24px;
+	  padding: 4px 10px;
+	}
+	.currency_section_left > h1 {
+	  padding: 10px 0;
+	}
+	.currency_section_bot_right {
+	  padding:30px 30px 47px;
+	}
+	.tops img {
+	  height: 75px;
+	}
+	.tops .texts {
+	  font-size: 44px;
+	  top: 12px;
+	  width: 70%;
+	}
+	.tops .text {
+	  top: 0;
+	}
+	.speed_count_dec {
+	  margin: 0 0 28px;
+	}
+	#canvas-preview {
+	  position: relative;
+	  width: 100%;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 12px;
+	}
+	.user_form {
+	  float: left;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 64%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 7px;
+	  top: -23px;
+	}
+	.social_links > ul {
+	  padding: 18px 10px 20px;
+	}
+	.social_links li a {
+	  font-size: 11px;
+	  width: 100%;
+	}
+	.login_to_link > a {
+	  font-size: 16px;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left:0 !important;
+	}
+	.many_watch_count_dec {
+	  width: 100%;
+	}
+	.many_watch_count_dec_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.digital-clock-top {
+	  margin: 10px 0 0;
+	}
+	
+}
+@media (min-width: 901px) and (max-width: 1099px) {
+	#webapp-wrapper {
+	  overflow: hidden;
+	}
+	.container {
+	  width: 730px;
+	}
+	.banner_img img {
+	  height: 285px;
+	}
+	.schedule {
+	  margin: 0;
+	}
+	.clendr {
+	  margin: 0;
+	}
+	.clendr .ui-datepicker table {
+	  margin: 0 !important;
+	}
+	.clendr .ui-datepicker .ui-datepicker-header {
+	  padding: 0 !important;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 413px;
+	}
+	.chat_box_header_counter {
+	  height: 40px;
+	  width: 40px;
+	}
+	.chat_box_header .fa.fa-cog.fa-2 {
+	  right: -8px;
+	  top: -8px;
+	}
+	.clocks_section {
+	  margin: 0 0 3%;
+	  width: 100%;
+	}
+	.tops {
+	  clear: both;
+	  display: block;
+	  float: none;
+	  height: 150px;
+	  margin: auto;
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	  width: 50%;
+	}
+	.weather_section {
+	  width: 100%;
+	}
+	.sender_reciever_chat p {
+	  font-size: 12px;
+	}
+	.reciever_img {
+	  width: 25%;
+	}
+	.reciever_msg_time {;
+	  padding: 3px;
+	  width: 68%;
+	}
+	.reciever_msg_img .reciever_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.reciever_msg_img .reciever_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.sender_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.sender_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.chat_box_header_desc {
+	  float: left;
+	  width: 60%;
+	}
+	.sender_img {
+	  width: 25%;
+	}
+	.sender_msg_time {
+	  padding: 3px;
+	  width: 68%;
+	}
+	.chat_box_header_desc {
+	  margin: 8px 0 0;
+	}
+	.reciever_msg_img {
+	  margin: 0 0 4%;
+	  padding: 0 0 0 8px;
+	}
+	.sender_msg_img {
+	  margin:0 0 4%;
+	  padding: 0 8px 0 0;
+	}
+	.sender_reciever_chat {
+	  margin: 7% 0 0;
+	}
+	.clocks_section .clocks_section_desc {
+	  padding:70px 0;
+	}
+	.chat_box_header_desc h1 {
+	  font-size: 11px;
+	}
+	.speed_count_dec > p {
+	  padding: 14px 0;
+	}
+	.watch_count_dec > p {
+	  line-height: 24px;
+	}
+	.weather_section_temperature > p {
+	  font-size: 70px;
+	  padding: 16px 8px;
+	}
+	.speed_count_img {
+	  box-sizing: border-box;
+	  padding: 0 15px;
+	}
+	.starting_currency_left {
+	  top: 18px;
+	}
+	.starting_currency_left_bot > select {
+	  height: 160px;
+	}
+	/*.convert_loader_img {
+	  margin: 12px 0;
+	}*/
+	.convert_loader_img {
+	  margin: 34px 0;
+	}
+	.convert {
+	  height: 38px;
+	  margin: 0 0 18px;
+	}
+	.currency_section_left input {
+	  font-size: 24px;
+	}
+	.starting_currency_right_img {
+	  margin: 0 10px 0 0;
+	  width: 30%;
+	}
+	.starting_currency_right_ratio {
+	  margin: 10px 0 0;
+	  width: 65%;
+	}
+	.big_night_desc_right_bot p {
+	  font-size: 16px;
+	}
+	.currency_section_left > h1 {
+	  padding: 10px 0;
+	}
+	.starting_currency_left {
+	  padding: 0 10px 0 0;
+	}
+	.currency_section_bot_right {
+	  padding: 30px 30px 51px;
+	}
+	.tops img {
+	  height: 75px;
+	}
+	.tops .texts {
+	  font-size: 44px;
+	  top: 12px;
+	  width: 70%;
+	}
+	.tops .text {
+	  top: 0;
+	}
+	.speed_count_dec {
+	  margin: 0 0 22px;
+	}
+	#canvas-preview {
+	  position: relative;
+	  width: 200px;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 12px;
+	}
+	.user_form {
+	  float: left;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 64%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 7px;
+	  top: -23px;
+	}
+	.social_links > ul {
+	  padding: 18px 10px 20px;
+	}
+	.social_links li a {
+	  font-size: 11px;
+	  width: 100%;
+	}
+	.login_to_link > a {
+	  font-size: 16px;
+	}
+	.currency_rates_img .ddTitleText .ddlabel {
+	  left: 10px !important;
+	}
+	.weather_section_temperature span {
+	  font-size: 16px;
+	}
+	.many_watch_count_dec {
+	  width: 100%;
+	}
+	.many_watch_count_dec_right {
+	  text-align: center;
+	  width: 100%;
+	}
+	.digital-clock-top {
+	  margin: 10px 0 0;
+	}
+}
+@media (min-width: 1099px) and (max-width: 1280px) {
+	#webapp-wrapper {
+	  overflow: hidden;
+	}
+	.container {
+	  width: 940px;
+	}
+	.banner_img img {
+	  height: 285px;
+	}
+	.schedule {
+	  margin: 0;
+	}
+	.clendr {
+	  margin: 0;
+	}
+	.clendr .ui-datepicker table {
+	  margin: 0 !important;
+	}
+	.clendr .ui-datepicker .ui-datepicker-header {
+	  padding: 0 !important;
+	}
+	.sender_reciever_chat_page .sender_msg_img {
+	  width: 100%;
+	}
+	.client_tour_scroll {
+	  height: 413px;
+	}
+	.chat_box_header_desc_profile {
+	  width: 61%;
+	}
+	.chat_box_header .fa.fa-cog.fa-2 {
+	  right: -8px;
+	  top: -8px;
+	}
+	.tops {
+	  clear: both;
+	  display: block;
+	  float: none;
+	  height: 150px;
+	  margin: auto;
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	  width: 50%;
+	}
+	.sender_reciever_chat p {
+	  font-size: 12px;
+	}
+	.reciever_img {
+	  width: 25%;
+	}
+	.reciever_msg_time {;
+	  padding: 3px;
+	  width: 68%;
+	}
+	.reciever_msg_img .reciever_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.reciever_msg_img .reciever_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.sender_msg_time::before {
+	  border-width: 14px;
+	  margin-top: -14px;
+	}
+	.sender_msg_time::after {
+	  border-width: 11px;
+	  margin-top: -11px;
+	}
+	.chat_box_header_desc {
+	  float: left;
+	  width: 60%;
+	}
+	.sender_img {
+	  width: 25%;
+	}
+	.sender_msg_time {
+	  padding: 3px;
+	  width: 68%;
+	}
+	.chat_box_header_desc {
+	  margin: 8px 0 0;
+	}
+	.reciever_msg_img {
+	  margin: 0 0 4%;
+	  padding: 0 0 0 8px;
+	}
+	.sender_msg_img {
+	  margin:0 0 4%;
+	  padding: 0 8px 0 0;
+	}
+	.sender_reciever_chat {
+	  margin: 7% 0 0;
+	}
+	.chat_box_header_desc h1 {
+	  font-size: 11px;
+	}
+	.speed_count_dec > p {
+	  padding: 14px 0;
+	}
+	.watch_count_dec > p {
+	  line-height: 24px;
+	}
+	.weather_section_temperature > p {
+	  font-size: 70px;
+	  padding: 16px 8px;
+	}
+	.speed_count_img {
+	  box-sizing: border-box;
+	  padding: 0 15px;
+	}
+	.starting_currency_left {
+	  top: 18px;
+	}
+	.starting_currency_left_bot > select {
+	  height: 160px;
+	}
+	.select_web_dropdown {
+	  margin: 8px 0;
+	}
+	.convert_loader_img {
+	  margin: 12px 0;
+	}
+	.convert {
+	  margin: 0 0 8px;
+	}
+	.currency_section_left input {
+	  font-size: 24px;
+	  padding: 4px 10px;
+	}
+	.currency_section_left > h1 {
+	  padding: 10px 0;
+	}
+	.currency_section_bot_right {
+	  padding: 20px 30px 15px;
+	}
+	.tops img {
+	  height: 75px;
+	}
+	.tops .texts {
+	  font-size: 44px;
+	  top: 12px;
+	  width: 70%;
+	}
+	.tops .text {
+	  top: 0;
+	}
+	.speed_count_dec {
+	  margin: 0 0 20px;
+	}
+	#canvas-preview {
+	  position: relative;
+	  width: 168px;
+	}
+	.user_form_info {
+	  margin: 0 0 2%;
+	  width: 100%;
+	}
+	.user_profile_img_name {
+	  margin: 0 0 12px;
+	}
+	.user_form {
+	  float: left;
+	  width: 100%;
+	}
+	#user_form input {
+	  width: 64%;
+	}
+	#user_form li .fa.fa-pencil {
+	  right: 7px;
+	  top: -23px;
+	}
+	.social_links > ul {
+	  padding: 18px 10px 20px;
+	}
+	.social_links li a {
+	  font-size: 11px;
+	  width: 100%;
+	}
+	.login_to_link > a {
+	  font-size: 16px;
+	}
+	.starting_currency_right li {
+	  margin: 0 0 4px;
+	}
+	.many_watch_count_dec > p {
+	  font-size: 12px;
+	}
+	.many_watch_count_img {
+	  width: 44%;
+	}
+	.digital-clock-top {
+	  float: left;
+	  width: 56%;
+	}
+	.digital {
+	  width: 90px !important;
+	}
+	
+}

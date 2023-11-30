@@ -1,0 +1,42 @@
+#clock li, #clock2 li {
+display:inline;
+color:#333333;
+font-size:11px;
+font-weight:bold;
+}
+#clock, #clock2 {
+padding-left: 0;
+margin: 5px 0;
+}
+.title {
+color:#333333;
+font-size:11px;
+font-weight:bold;
+margin: 0 10px;
+}
+.digital {
+  background: #63a2af none repeat scroll 0 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  clear: both;
+  float: none !important;
+  height: 34px;
+  line-height: 34px;
+  margin: 0 auto 2% !important;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100px !important;
+}
+.digital li {
+  color: #fff;
+  display: inline;
+  /*float: left;*/
+  font-family: proximanova-regular;
+  font-size: 16px;
+  margin: 0;
+  width: 22%;
+}
+.digital .sec {
+  display: none !important;
+}
